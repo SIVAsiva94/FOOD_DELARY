@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "485075331589",
+    "project_id": "food-delary-autentication",
+    "storage_bucket": "food-delary-autentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485075331589:android:8c619b3acd5eb2e0670a6c",
+        "android_client_info": {
+          "package_name": "com.example.fooddelary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485075331589-4or0kfk19f42nn37c3alr1a81dl7ut9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpKh_MJyQfsQK9QXGlpjioMbT0PqNLWx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485075331589-4or0kfk19f42nn37c3alr1a81dl7ut9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

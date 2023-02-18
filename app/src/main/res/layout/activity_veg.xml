@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".veg">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/veg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:text="Vegitarian"
+            android:background="#00000000"
+            android:textSize="22sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardveg"
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp"
+        android:outlineSpotShadowColor="#00000000"
+        android:outlineAmbientShadowColor="#00000000"
+
+        android:background="#00000000"
+        app:menu="@menu/bottom_navi_menu" />
+</LinearLayout>

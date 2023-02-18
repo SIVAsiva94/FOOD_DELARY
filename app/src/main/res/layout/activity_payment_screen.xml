@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backroundwhite"
+    android:orientation="vertical"
+    tools:context=".PaymentScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Payment Screen"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/primary_color"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/plain_credit_card_amico"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:textColor="@color/textcolor"
+        android:layout_marginRight="15dp"
+        android:text="Card Holder Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/card_holder_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="05dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textinput"
+        android:hint="  Allisa" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:textColor="@color/textcolor"
+        android:layout_marginRight="15dp"
+        android:text="Card Number"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="05dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textinput"
+        android:hint="  1234567" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:textColor="@color/textcolor"
+        android:layout_marginRight="15dp"
+        android:text="Expiration Date"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/expiry_data"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="05dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/textinput"
+        android:hint="  2 July 20022" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_outline_check_box_24"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:text="Securely Save And Details"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttonbag"
+        android:text="Pay"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="1dp"
+        android:outlineSpotShadowColor="#00000000"
+        android:outlineAmbientShadowColor="#00000000"
+
+        android:background="#00000000"
+        app:menu="@menu/bottom_navi_menu" />
+
+
+</LinearLayout>

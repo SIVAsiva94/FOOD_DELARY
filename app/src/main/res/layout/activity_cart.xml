@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backroundwhite"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/linearlayoutcicular"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_outline_search_24"/>
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/ic_outline_mic_none_24"
+                    android:hint="Search"
+                    android:background="@drawable/textinput"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                />
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_outline_notifications_24"
+                android:background="#00000000"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="My cart"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/primary_color"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/cart_rv"
+        android:layout_marginLeft="05dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="270dp"
+      >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/cardradius"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp">
+            <LinearLayout
+                android:layout_width="130dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sub total"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery fee"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tip"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/cart_sum_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/cart_delivery_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="130dp"
+                    android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/cart_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/cart_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                    android:text="70"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttonbag"
+            android:text="Order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:outlineAmbientShadowColor="#00000000"
+        android:outlineSpotShadowColor="#00000000"
+
+        app:menu="@menu/bottom_navi_menu" />
+</LinearLayout>

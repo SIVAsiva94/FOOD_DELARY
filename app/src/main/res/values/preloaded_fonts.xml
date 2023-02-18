@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/aguafina_script</item>
+        <item>@font/alegreya_sans_thin</item>
+        <item>@font/almarai_light</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/artifika</item>
+        <item>@font/butterfly_kids</item>
+        <item>@font/federant</item>
+        <item>@font/fjord_one</item>
+    </array>
+</resources>

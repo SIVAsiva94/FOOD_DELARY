@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="#000000"
+    tools:context=".forgetpass">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:background="#00000000"
+
+      android:src="@drawable/forgot_password_pana" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="Forget password"
+      android:background="#00000000"
+      android:textAlignment="center"
+      android:textColor="@color/primary_color"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="15dp"
+      android:textColor="@color/textcolor"
+      android:background="#00000000"
+      android:text="Enter Email Address"
+      android:textSize="16sp"
+      android:textStyle="bold" />
+
+  <EditText
+      android:id="@+id/forgetpass"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:drawableLeft="@drawable/ic_outline_mail_outline_24"
+      android:layout_marginLeft="15dp"
+
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="15dp"
+      android:background="@drawable/textinput"
+      android:hint="  Alima123@gmail.com" />
+
+  <Button
+      android:id="@+id/send1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginRight="15dp"
+      android:background="@drawable/buttonbag"
+      android:text="Send"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="20sp" />
+
+  <Button
+      android:id="@+id/back1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="15dp"
+      android:background="@drawable/backbutton"
+
+      android:text="Back to sign in"
+      android:textAllCaps="false"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+
+</LinearLayout>
